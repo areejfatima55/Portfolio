@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areej - Developer Portfolio</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9c636d7440.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+        <nav>
+            <div class="left"><img src="images/logo.png" class="logo"></div>
+            <div class="right">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Work">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </div>
+        </nav>
+    
+    <main>
+        <section id="home">
+            <div class="leftSection">
+                Hi! My Name is
+                <div><span class="brown">
+                        Areej Sheheryar
+                    </span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="images/bg.png">
+            </div>
+        </section>
+
+        <section id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutCol1">
+                        <img src="images/aboutme.png">
+                    </div>
+                    <div class="aboutCol2">
+                        <h1 class="sub-title">So, who am I?</h1>
+                        <p>Hello! I'm Areej Sheheryar, a versatile coder
+                            with a passion for bringing ideas to life across various domains,
+                            whether it's creating dynamic websites,crafting intuitive mobile
+                            applications, or developing engaging games.Each experience has not only
+                            honed my technical skills but has also fueled my enthusiasm for the
+                            limitless possibilities that coding offers.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming languages:</span> C++,  C#,  Java,  JavaScript</li>
+                                <li><span>Web Development:</span> Bootstrap, HTML, CSS, JQuery</li> 
+                                <li><span>Database:</span> Firestore, MySQL</li> 
+                                <li><span>Cloud Services:</span> Google Firebase</li> 
+                                <li><span>Version Control:</span> Git</li> 
+                                <li><span>Operating Systems:</span> Unix, Windows</li> 
+                                <li><span>Design Tools:</span> Figma, Adobe Photoshop</li> 
+                                <li><span>Game Engine:</span> Unity</li> 
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Web Developer</span> at ZamZam B&B, Toronto, Canada          January 2023 - Current</li>
+                                <li><span>Game Development Intern</span> at Mindstorm Studios, Lahore, Pakistan          May 2021 - July 2021</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BSc (Hons) in Computer Science</span><br>Kinnaird College For Women<br>2019-2023</li>
+                                <li><span>A-level</span><br>Lahore Grammar School<br>2017-2018</li>
+                                <li><span>O-level</span><br>Pakistan International School Jeddah- English Section<br>2015-2016</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Services">
+            <div class="container1">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>
+                            Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2>App development</h2>
+                        <p>
+                            Mobile application development is the process of making software for smartphones, tablets and digital assistants, most commonly for the Android and iOS operating systems.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>Game Development</h2>
+                        <p>
+                            Game Development is the art of creating games and describes the design, development and release of a game.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Work">
+            <div class="container1">
+                <h1 class="sub-title">My Work</h1>
+                <div class="services-list">
+                    <div>
+                        <img src="images/app_icon1.png"></img>
+                        <h2>Chuppan Chuppai</h2>
+                        <p>
+                            Chuppan Chuppai is an amazing simulation of Pakistani household to give user 
+                            the experience of Desi houses with big porches with a twist. Where the player can opt to hide or seek ai bots in desi environment.
+                            </p>
+                    </div>
+                   
+                    <div>
+                        <img src="images/app_icon2.jpeg"></img>
+                        <h2>Lahore Tourist Guide App</h2>
+                        <p>
+                            Our andriod app help tourists to find restaurants, hotels and parks to visit on their stay in Lahore and make it remarkable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <h1 class="sub-title">Contact me</h1>
+            <div class="container4">
+                
+                <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="65e8a214-87eb-4b35-89b1-0bdb6dd9e3c8">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name.."required>
+              
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email"required>
+                
+                              
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Enter your message" style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+              
+        </section>
+
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'App developer', 'Game Developer', 'MS Expert'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+          sidemenu.style.right= "0";
+        }
+        function closemenu(){
+          sidemenu.style.right= "-200px";
+        }
+    </script>
+</body>
+
+</html>
